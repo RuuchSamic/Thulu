@@ -6,7 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class NoteContainer : MonoBehaviour
 {
-
+    float horizInput;
+    float vertInput;
     bool isActive = false;
     KeyCode thisKey;
     KeyCode thisKey2;
@@ -20,12 +21,14 @@ public class NoteContainer : MonoBehaviour
 
     void Update()
     {
+        horizInput = Input.GetAxisRaw("Horizontal");
+        vertInput = Input.GetAxisRaw("Vertical");
+
         if(isActive == true)
         {
             //Destroy(temp);
             isActive = false;
         }
-
         if (Input.GetKeyDown(thisKey) == true)
         {
             //Destroy(collidedObj[0]);
@@ -44,11 +47,11 @@ public class NoteContainer : MonoBehaviour
             soundSource.clip = destroyClip;
             soundSource.Play();
         }
-        //else if (Input.GetKeyDown)
-        //{
-        //    soundSource.clip = missClip;
-        //    soundSource.Play();
-        //}
+        else if ((!Input.GetKeyDown(thisKey) || !Input.GetKeyDown(thisKey2)) && (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.UpArrow)))
+        {
+            soundSource.clip = missClip;
+            soundSource.Play();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
