@@ -28,13 +28,19 @@ public class NoteContainer : MonoBehaviour
 
         if (Input.GetKeyDown(thisKey) == true)
         {
-            Destroy(collidedObj[0]);
+            //Destroy(collidedObj[0]);
+            collidedObj[0].layer = 8;
+            collidedObj[0].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            SpriteSlicer2D.ExplodeSprite(collidedObj[0], 8, 500.0f);
             soundSource.clip = destroyClip;
             soundSource.Play();
         }
         else if (Input.GetKeyDown(thisKey2))
         {
-            Destroy(collidedObj2[0]);
+            //Destroy(collidedObj2[0]);
+            collidedObj2[0].layer = 8;
+            collidedObj2[0].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            SpriteSlicer2D.ExplodeSprite(collidedObj2[0], 8, 500.0f);
             soundSource.clip = destroyClip;
             soundSource.Play();
         }
