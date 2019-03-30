@@ -8,6 +8,8 @@ public class SpriteResizer : MonoBehaviour
 
     public GameObject player1;
     public GameObject player2;
+    public List<GameObject> player1StackListA = new List<GameObject>();
+    public List<GameObject> player2StackListA = new List<GameObject>();
     //sprites
     public GameObject frogSprite1;
     public GameObject frogSprite2;
@@ -37,15 +39,25 @@ public class SpriteResizer : MonoBehaviour
     public GameObject frogStar;
     public GameObject frogSnake;
 
-    public Vector3 p1 = new Vector3(-5.541f, 4.408f, 0f);
-    public Vector3 p2 = new Vector3(5.42f, 4.5f, 0f);
+    public Vector3 p1 = new Vector3(-5.541f, 4.408f, -25f);
+    public Vector3 p2 = new Vector3(5.42f, 4.5f, -25f);
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        if(Player1Select.playerOne == 0)
+
+        GameObject p1Sprite = Instantiate(player1, p1, Quaternion.identity);
+        GameObject p2Sprite = Instantiate(player2, p2, Quaternion.identity);
+
+        HitNote note1 = player1.AddComponent<HitNote>();
+        HitNote note2 = player2.AddComponent<HitNote>();
+
+        Debug.Log(Player1Select.playerOne);
+        Debug.Log(Player2Select.playerTwo);
+
+        if (Player1Select.playerOne == 0)
         {
             player1.GetComponent<SpriteRenderer>().sprite = snakeSprite1.GetComponent<SpriteRenderer>().sprite;
         }
@@ -71,10 +83,12 @@ public class SpriteResizer : MonoBehaviour
             player2.GetComponent<SpriteRenderer>().sprite = starSprite1.GetComponent<SpriteRenderer>().sprite;
         }
 
-        GameObject p1Sprite = Instantiate(player1, p1, Quaternion.identity);
-        GameObject p2Sprite = Instantiate(player2, p2, Quaternion.identity);
+        //GameObject p1Sprite = Instantiate(player1, p1, Quaternion.identity);
+        //GameObject p2Sprite = Instantiate(player2, p2, Quaternion.identity);
 
-        
+        player1StackListA.Add(player1);
+        player2StackListA.Add(player2);
+
 
     }
 

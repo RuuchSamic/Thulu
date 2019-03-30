@@ -729,8 +729,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3343ad53984aeba4a8a0ec127c1a2578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 0}
-  player2: {fileID: 0}
+  player1: {fileID: 7838707841717727703, guid: 6e38d654e390e964788ee2fd3b0f5191, type: 3}
+  player2: {fileID: 9039387338495214961, guid: ea3d21cd1d657c74083c76c655e74998, type: 3}
+  player1StackListA: []
+  player2StackListA: []
   frogSprite1: {fileID: 7838707841717727703, guid: 6e38d654e390e964788ee2fd3b0f5191,
     type: 3}
   frogSprite2: {fileID: 1549725719437639367, guid: 4f3875855cd9cb542b5b36863bbacead,
@@ -2015,7 +2017,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068240953}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.615, y: 7.214, z: 0}
+  m_LocalPosition: {x: 0.615, y: 7.214, z: 10}
   m_LocalScale: {x: 1.3247, y: 0.937, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
