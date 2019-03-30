@@ -16,20 +16,14 @@ public class NoteContainer : MonoBehaviour
     public AudioClip destroyClip;
     public AudioClip missClip;
     public AudioSource soundSource;
-
-
+    int gameScore = 0;
+    int player1Count = 0;
+    int player2Count = 0;
 
     void Update()
     {
-        horizInput = Input.GetAxisRaw("Horizontal");
-        vertInput = Input.GetAxisRaw("Vertical");
-
-        if(isActive == true)
-        {
-            //Destroy(temp);
-            isActive = false;
-        }
-        if (Input.GetKeyDown(thisKey) == true)
+        //player 1 pass
+        if (Input.GetKeyDown(thisKey))
         {
             //Destroy(collidedObj[0]);
             collidedObj[0].layer = 8;
@@ -37,7 +31,10 @@ public class NoteContainer : MonoBehaviour
             SpriteSlicer2D.ExplodeSprite(collidedObj[0], 8, 500.0f);
             soundSource.clip = destroyClip;
             soundSource.Play();
+            player1Count++;
+            Debug.Log("Run 1");
         }
+        //player2 pass
         else if (Input.GetKeyDown(thisKey2))
         {
             //Destroy(collidedObj2[0]);
@@ -46,18 +43,37 @@ public class NoteContainer : MonoBehaviour
             SpriteSlicer2D.ExplodeSprite(collidedObj2[0], 8, 500.0f);
             soundSource.clip = destroyClip;
             soundSource.Play();
+            player2Count++;
+            Debug.Log("Run 2");
         }
-        else if ((!Input.GetKeyDown(thisKey) || !Input.GetKeyDown(thisKey2)) && (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.UpArrow)))
+        //player 1 fail
+        else if ((!Input.GetKeyDown(thisKey)) && (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.W)))
         {
             soundSource.clip = missClip;
             soundSource.Play();
+            player1Count--;
+            Debug.Log("Run 3");
+            print("This Key at run 3 =" + thisKey);
+
         }
+        //player 2 fail
+        else if ((!Input.GetKeyDown(thisKey2)) && (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.UpArrow)))
+        {
+            soundSource.clip = missClip;
+            soundSource.Play();
+            player2Count--;
+            Debug.Log("Run 4");
+        }
+        //else
+        //{
+        //    //donothing
+        //}
+        ////gameScore = player2Count - player1Count;
+        ////print(gameScore);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-
-        Debug.Log("hi");
 
         if (other.gameObject.tag == "NoteBlock")
         {
@@ -72,7 +88,6 @@ public class NoteContainer : MonoBehaviour
 
                 thisKey = other.gameObject.GetComponent<HitNote>().key;
                 print(thisKey);
-                Debug.Log("hello");
                 isActive = true;
 
             }
@@ -82,7 +97,6 @@ public class NoteContainer : MonoBehaviour
                 collidedObj2[0] = other.gameObject;
                 thisKey2 = other.gameObject.GetComponent<HitNote>().key;
                 print(thisKey2);
-                Debug.Log("hello");
                 isActive = true;
             }
 
