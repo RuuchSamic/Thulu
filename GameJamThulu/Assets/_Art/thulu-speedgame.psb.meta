@@ -1,0 +1,281 @@
+fileFormatVersion: 2
+guid: 1d0ac4b9c295049e68c3575415ba9b71
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: frog-body-1_GO/frog-body-1_GO
+    100002: frog-body-1_GO/frog-body-1_GO/frog-body-1
+    100004: frog-body-1_GO/frog-body-1_GO/frog-head-1
+    100006: frog-body-1_GO/frog-body-1_GO/frog-leftleg-1
+    100008: frog-body-1_GO/frog-body-1_GO/frog-rightleg-1
+    400000: frog-body-1_GO/frog-body-1_GO/Transform
+    400002: frog-body-1_GO/frog-body-1_GO/frog-body-1/Transform
+    400004: frog-body-1_GO/frog-body-1_GO/frog-head-1/Transform
+    400006: frog-body-1_GO/frog-body-1_GO/frog-leftleg-1/Transform
+    400008: frog-body-1_GO/frog-body-1_GO/frog-rightleg-1/Transform
+    2800000: thulu-speedgame
+    21200000: frog-body-1_GO/frog-body-1_GO/frog-body-1/SpriteRenderer
+    21200002: frog-body-1_GO/frog-body-1_GO/frog-head-1/SpriteRenderer
+    21200004: frog-body-1_GO/frog-body-1_GO/frog-leftleg-1/SpriteRenderer
+    21200006: frog-body-1_GO/frog-body-1_GO/frog-rightleg-1/SpriteRenderer
+    21300000: frog-head-1
+    21300002: frog-rightleg-1
+    21300004: frog-leftleg-1
+    21300006: frog-body-1
+    100100000: frog-body-1_GO
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: frog-head-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 934
+      y: 574
+      width: 671
+      height: 750
+    spriteID: 0eb6b3da4afc349f5861f6ff2f5d453d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 242, y: 60}
+  - name: frog-rightleg-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 934
+      y: 4
+      width: 951
+      height: 562
+    spriteID: 9c9290d5bafd544dba1362556526f542
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 289, y: -145}
+  - name: frog-leftleg-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 943
+      width: 830
+      height: 686
+    spriteID: 871f0342c1b4746c99550d1abdd9a2db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -628, y: 741}
+  - name: frog-body-1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 922
+      height: 931
+    spriteID: f0ceea5d60c0542e7ab264327a435991
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -641, y: -273}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 2100, y: 1500}
+  textureActualWidth: 2048
+  textureActualHeight: 2048
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: characters
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 130
+    mosaicPosition: {x: 0, y: 0}
+  - name: frog
+    spriteName: 
+    isGroup: 1
+    parentIndex: 0
+    spriteID: 
+    layerID: 141
+    mosaicPosition: {x: 0, y: 0}
+  - name: 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 1
+    spriteID: 
+    layerID: 155
+    mosaicPosition: {x: 0, y: 0}
+  - name: frog-head-1
+    spriteName: frog-head-1
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 0eb6b3da4afc349f5861f6ff2f5d453d
+    layerID: 200
+    mosaicPosition: {x: 934, y: 574}
+  - name: frog-rightleg-1
+    spriteName: frog-rightleg-1
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 9c9290d5bafd544dba1362556526f542
+    layerID: 198
+    mosaicPosition: {x: 934, y: 4}
+  - name: frog-leftleg-1
+    spriteName: frog-leftleg-1
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 871f0342c1b4746c99550d1abdd9a2db
+    layerID: 191
+    mosaicPosition: {x: 4, y: 943}
+  - name: frog-body-1
+    spriteName: frog-body-1
+    isGroup: 0
+    parentIndex: 2
+    spriteID: f0ceea5d60c0542e7ab264327a435991
+    layerID: 199
+    mosaicPosition: {x: 4, y: 4}
+  - name: boxes
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 128
+    mosaicPosition: {x: 0, y: 0}
+  - name: color-boxes
+    spriteName: 
+    isGroup: 1
+    parentIndex: 7
+    spriteID: 
+    layerID: 122
+    mosaicPosition: {x: 0, y: 0}
+  - name: theme 3
+    spriteName: 
+    isGroup: 1
+    parentIndex: 8
+    spriteID: 
+    layerID: 29
+    mosaicPosition: {x: 0, y: 0}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+  boneGOs: []
+  generateGOHierarchy: 0
