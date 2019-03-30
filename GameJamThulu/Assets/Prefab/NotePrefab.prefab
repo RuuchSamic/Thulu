@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 76925483235153494}
   m_Layer: 0
   m_Name: NotePrefab
-  m_TagString: Untagged
+  m_TagString: NoteBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 0
   note: {fileID: 6770349052498146172}
+  stackGen: {fileID: 0}
 --- !u!61 &6770349052498146144
 BoxCollider2D:
   m_ObjectHideFlags: 0

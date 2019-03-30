@@ -7,10 +7,9 @@ public class StackGenerator : MonoBehaviour
 
     public int stackSize;
     private int randomKey;
-    List<GameObject> player1StackList = new List<GameObject>();
-    List<GameObject> player2StackList = new List<GameObject>();
+    public List<GameObject> player1StackList = new List<GameObject>();
+    public List<GameObject> player2StackList = new List<GameObject>();
     public GameObject noteObj;
-    public Vector3 startVector = new Vector3(0, 0, 0);
     public Vector3 vectorShift = new Vector3(4, 0, 0);
 
     // Start is called before the first frame update
@@ -19,21 +18,16 @@ public class StackGenerator : MonoBehaviour
         for (int i = 0; i < stackSize; i++)
         {
 
-            GameObject go1 = Instantiate(noteObj, transform.position+Vector3.up*i*2, Quaternion.identity);
+            GameObject go1 = Instantiate(noteObj, transform.position+ Vector3.up*(i + 2) * 2 + Vector3.left * 4, Quaternion.identity);
             GameObject go2 = Instantiate(noteObj, transform.position + Vector3.up * i*2 + vectorShift, Quaternion.identity);
 
-            //GameObject go1 = new GameObject();
             HitNote note1 = go1.AddComponent<HitNote>();
-            //GameObject go2 = new GameObject();
             HitNote note2 = go2.AddComponent<HitNote>();
-            //SpriteRenderer sr = go1.AddComponent<SpriteRenderer>();
-
 
             randomKey = Random.Range(0, 4);
 
             if (randomKey == 0)
             {
-                //go1.GetComponent(HitNote note1).key = KeyCode.W;
                 go1.GetComponent<HitNote>().key = KeyCode.W;
                 go2.GetComponent<HitNote>().key = KeyCode.UpArrow;
             }
@@ -57,14 +51,15 @@ public class StackGenerator : MonoBehaviour
             player2StackList.Add(go2);
 
 
-            //GameObject test = GameObject.Instantiate(noteObj,startVector,transform.rotation);
-
         }
+
+        player1StackList[0].active = true;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
