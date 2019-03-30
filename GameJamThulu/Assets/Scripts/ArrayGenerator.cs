@@ -6,7 +6,7 @@ public class ArrayGenerator : MonoBehaviour
 {
     public KeyCode[] player1 = new KeyCode[10];
     public KeyCode[] player2 = new KeyCode[10];
-    private int randomKey;
+    public int randomKey;
     //private Random randomGenerator = new Random();
 
 
@@ -45,5 +45,10 @@ public class ArrayGenerator : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public KeyCode GetKeyCode()
+    {
+        return player1[randomKey];
     }
 }
