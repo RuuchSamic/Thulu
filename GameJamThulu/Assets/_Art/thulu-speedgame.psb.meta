@@ -207,21 +207,21 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 130
     mosaicPosition: {x: 0, y: 0}
   - name: frog
     spriteName: 
     isGroup: 1
     parentIndex: 0
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 141
     mosaicPosition: {x: 0, y: 0}
   - name: 1
     spriteName: 
     isGroup: 1
     parentIndex: 1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 155
     mosaicPosition: {x: 0, y: 0}
   - name: frog-head-1
@@ -256,21 +256,21 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 128
     mosaicPosition: {x: 0, y: 0}
   - name: color-boxes
     spriteName: 
     isGroup: 1
     parentIndex: 7
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 122
     mosaicPosition: {x: 0, y: 0}
   - name: theme 3
     spriteName: 
     isGroup: 1
     parentIndex: 8
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 29
     mosaicPosition: {x: 0, y: 0}
   characterData:
