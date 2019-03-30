@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 039ebefe467d03047b8e045e7884d423
   - enabled: 1
-    path: Assets/Scenes/PausemenuTest.unity
-    guid: 66d8f24e3d4f55543abefa2f335e17a4
+    path: Assets/Scenes/CharacterSelectP1.unity
+    guid: b03e1d2ad12671241bdfbb5db7cf7566
+  - enabled: 1
+    path: Assets/Scenes/CharacterSelectP2.unity
+    guid: 72b7ee5751345674c80c70d384c369f7
+  - enabled: 1
+    path: Assets/Scenes/MaddieTestScene.unity
+    guid: f971e27bd9bec4af4ac891af57592096
   m_configObjects: {}

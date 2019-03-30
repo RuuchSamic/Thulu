@@ -148,6 +148,9 @@ MonoBehaviour:
   destroyClip: {fileID: 8300000, guid: b05b6a2c86949a6469e49548d83daaca, type: 3}
   missClip: {fileID: 8300000, guid: e8ea43a309d0741489803224090063cf, type: 3}
   soundSource: {fileID: 23682422}
+  gameScore: 0
+  player1Count: 0
+  player2Count: 0
 --- !u!61 &23682419
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -348,6 +351,7 @@ MonoBehaviour:
   destroyClip: {fileID: 8300000, guid: b05b6a2c86949a6469e49548d83daaca, type: 3}
   missClip: {fileID: 8300000, guid: e8ea43a309d0741489803224090063cf, type: 3}
   soundSource: {fileID: 23682422}
+  player2Count: 0
 --- !u!1 &63665400
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,6 +953,9 @@ MonoBehaviour:
   destroyClip: {fileID: 8300000, guid: b05b6a2c86949a6469e49548d83daaca, type: 3}
   missClip: {fileID: 8300000, guid: e8ea43a309d0741489803224090063cf, type: 3}
   soundSource: {fileID: 370057934}
+  gameScore: 0
+  player1Count: 0
+  player2Count: 0
 --- !u!82 &370057934
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1181,6 +1188,11 @@ MonoBehaviour:
   play2Rt: {fileID: 0}
   play2Lt: {fileID: 0}
   play2Dn: {fileID: 0}
+  con1: {fileID: 0}
+  con2: {fileID: 0}
+  ScorecardInst: {fileID: 0}
+  p1: {x: -11.64, y: 10.22, z: -0.00299}
+  p2: {x: 12.29, y: 10.22, z: -0.00299}
   vectorShift: {x: 4, y: 0, z: 0}
 --- !u!4 &494869152
 Transform:
@@ -1207,6 +1219,7 @@ GameObject:
   - component: {fileID: 516449428}
   - component: {fileID: 516449430}
   - component: {fileID: 516449429}
+  - component: {fileID: 516449431}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -1273,6 +1286,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516449427}
   m_CullTransparentMesh: 0
+--- !u!95 &516449431
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516449427}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5acda286a35099f458f8c04d50978c39, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &616799539
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,6 +2394,11 @@ MonoBehaviour:
   play2Rt: {fileID: 1455102863188934182, guid: 62baa5f23aa7892409ee9a2d8dc967cd, type: 3}
   play2Lt: {fileID: 6316457840283884308, guid: af03c41f211db9442b201f3aba073728, type: 3}
   play2Dn: {fileID: 5130399927181845113, guid: 4aaaa5501aaa3e34b800074318ff974f, type: 3}
+  con1: {fileID: 0}
+  con2: {fileID: 0}
+  ScorecardInst: {fileID: 0}
+  p1: {x: -11.64, y: 10.22, z: -0.00299}
+  p2: {x: 12.29, y: 10.22, z: -0.00299}
   vectorShift: {x: 4, y: 0, z: 0}
 --- !u!4 &1952685789
 Transform:

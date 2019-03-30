@@ -8,7 +8,13 @@ public class Player2Select : MonoBehaviour
     public static int playerTwo;
     public void Player2Choose(int charNum)
     {
+        
         playerTwo = charNum;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (playerTwo != Player1Select.playerOne)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+        
     }
 }
