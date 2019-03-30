@@ -725,6 +725,14 @@ MonoBehaviour:
   player1StackList: []
   player2StackList: []
   noteObj: {fileID: 6770349052498146172, guid: 859618aa05dd842b6bd4ae97b8225510, type: 3}
+  play1Up: {fileID: 0}
+  play1Rt: {fileID: 0}
+  play1Lt: {fileID: 0}
+  play1Dn: {fileID: 0}
+  play2Up: {fileID: 0}
+  play2Rt: {fileID: 0}
+  play2Lt: {fileID: 0}
+  play2Dn: {fileID: 0}
   vectorShift: {x: 4, y: 0, z: 0}
 --- !u!4 &494869152
 Transform:
@@ -1626,6 +1634,14 @@ MonoBehaviour:
   player1StackList: []
   player2StackList: []
   noteObj: {fileID: 6770349052498146172, guid: 859618aa05dd842b6bd4ae97b8225510, type: 3}
+  play1Up: {fileID: 1102033913708725545, guid: 3df29eccc988e0343a1b3ada7d37a5eb, type: 3}
+  play1Rt: {fileID: 4279192647820633191, guid: 7628c3e7bc39abc4ca283609bba97614, type: 3}
+  play1Lt: {fileID: 7902074900228616769, guid: 8632be79aa784394e83965e65232297b, type: 3}
+  play1Dn: {fileID: 7678376236550901190, guid: bf81fcff81fc92b4386323ec34572853, type: 3}
+  play2Up: {fileID: 6841002837357146779, guid: 0457bd089f738244f9f0339ee2e786a8, type: 3}
+  play2Rt: {fileID: 1455102863188934182, guid: 62baa5f23aa7892409ee9a2d8dc967cd, type: 3}
+  play2Lt: {fileID: 6316457840283884308, guid: af03c41f211db9442b201f3aba073728, type: 3}
+  play2Dn: {fileID: 5130399927181845113, guid: 4aaaa5501aaa3e34b800074318ff974f, type: 3}
   vectorShift: {x: 4, y: 0, z: 0}
 --- !u!4 &1952685789
 Transform:
