@@ -18,6 +18,11 @@ public class StackGenerator : MonoBehaviour
     public GameObject play2Rt;
     public GameObject play2Lt;
     public GameObject play2Dn;
+    public NoteContainer con1;
+    public NoteContainer2 con2;
+    public Scorecard ScorecardInst;
+    public Vector3 p1 = new Vector3(-11.64f, 10.22f, -0.00299f);
+    public Vector3 p2 = new Vector3(12.29f, 10.22f, -0.00299f);
     public Vector3 vectorShift = new Vector3(4, 0, 0);
 
     // Start is called before the first frame update
@@ -26,8 +31,8 @@ public class StackGenerator : MonoBehaviour
         for (int i = 0; i < stackSize; i++)
         {
 
-            GameObject go1 = Instantiate(noteObj, transform.position+ Vector3.up*(i + 2) * 2 + Vector3.left * 4, Quaternion.identity);
-            GameObject go2 = Instantiate(noteObj, transform.position + Vector3.up * (i + 2) * 2 + vectorShift, Quaternion.identity);
+            GameObject go1 = Instantiate(noteObj, transform.position + Vector3.up*(i + 2) * 2 + p1, Quaternion.identity);
+            GameObject go2 = Instantiate(noteObj, transform.position + Vector3.up * (i + 2) * 2 + p2, Quaternion.identity);
 
             HitNote note1 = go1.AddComponent<HitNote>();
             HitNote note2 = go2.AddComponent<HitNote>();
@@ -75,6 +80,9 @@ public class StackGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if((ScorecardInst.gameScore > -50 || ScorecardInst.gameScore < 50) && player1StackList.Count < 20)
+        //{
 
+        //}
     }
 }

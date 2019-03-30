@@ -15,7 +15,7 @@ public class NoteContainer2 : MonoBehaviour
     public AudioSource soundSource;
     int gameScore = 0;
     int player1Count = 0;
-    int player2Count = 0;
+    public int player2Count = 0;
 
     void Update()
     { 
