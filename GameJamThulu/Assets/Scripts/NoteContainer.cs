@@ -13,9 +13,9 @@ public class NoteContainer : MonoBehaviour
     public AudioClip destroyClip;
     public AudioClip missClip;
     public AudioSource soundSource;
-    int gameScore = 0;
-    int player1Count = 0;
-    int player2Count = 0;
+    public int gameScore = 0;
+    public int player1Count = 0;
+    public int player2Count = 0;
 
     void Update()
     {
