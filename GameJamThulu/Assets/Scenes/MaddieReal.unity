@@ -600,6 +600,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3343ad53984aeba4a8a0ec127c1a2578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player1: {fileID: 0}
+  player2: {fileID: 0}
+  frogSprite1: {fileID: 7838707841717727703, guid: 6e38d654e390e964788ee2fd3b0f5191,
+    type: 3}
+  frogSprite2: {fileID: 1549725719437639367, guid: 4f3875855cd9cb542b5b36863bbacead,
+    type: 3}
+  frogSprite3: {fileID: 1672070359001227216, guid: 7033be9f324921a42ae5433c27d9645b,
+    type: 3}
+  frogSprite4: {fileID: 4994040244137220450, guid: 15c11b26ca9c5d14c87be959ab9e9aeb,
+    type: 3}
+  frogSprite5: {fileID: 5858086687740260057, guid: 519a8bc6d78a79c4f8dad64e8219be0f,
+    type: 3}
+  snakeSprite1: {fileID: 9039387338495214961, guid: ea3d21cd1d657c74083c76c655e74998,
+    type: 3}
+  snakeSprite2: {fileID: 2898978823946517998, guid: 2e80cd3eccefc0242a8c1b543a681486,
+    type: 3}
+  snakeSprite3: {fileID: 6619404921040053252, guid: 63608cf17b3115c4c81f97a53e139302,
+    type: 3}
+  snakeSprite4: {fileID: 7181325753728631002, guid: b6eb1fccedc37be4ebffd3e9a2ee4245,
+    type: 3}
+  snakeSprite5: {fileID: 6695899159366281445, guid: df77d884879164745a22b57be7c94877,
+    type: 3}
+  starSprite1: {fileID: 3287804793832330157, guid: 8dd704eaebe426940a6e91a8477aeb51,
+    type: 3}
+  starSprite2: {fileID: 7723209210302850835, guid: a39df3c1cd62c5d4b86ce925111bf34a,
+    type: 3}
+  starSprite3: {fileID: 4702753914878079382, guid: 40a90b139d331704ba07c722ce70226e,
+    type: 3}
+  starSprite4: {fileID: 8732170525870071371, guid: f65b25d84ffd1844a8c5b3b051ae8038,
+    type: 3}
+  starSprite5: {fileID: 3235911147990054953, guid: 5cd544faa623d8648b0519aa1df9fa32,
+    type: 3}
+  snakeFrog: {fileID: 3501990663854178984, guid: 3442a477f4b43c247816ad83aa1ff52b,
+    type: 3}
+  snakeStar: {fileID: 1634778658508063210, guid: 60578672461290c4e8694474cf6a3727,
+    type: 3}
+  starSnake: {fileID: 2847571539765380081, guid: 9848f98051bb70d4880ccee5a0611556,
+    type: 3}
+  starFrog: {fileID: 4648838951978613115, guid: e36253a5c5d7a09448a359c15d0f1b0d,
+    type: 3}
+  frogStar: {fileID: 2821435140462725054, guid: 111ad5d066a098a4eabfb33dc1754ee6,
+    type: 3}
+  frogSnake: {fileID: 134206208857415120, guid: 49e044083e90a6c40becdf255ce9d9a9,
+    type: 3}
+  p1: {x: -5.541, y: 4.408, z: 0}
+  p2: {x: 5.42, y: 4.5, z: 0}
 --- !u!4 &203496735
 Transform:
   m_ObjectHideFlags: 0
