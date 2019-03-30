@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 23682419}
   - component: {fileID: 23682418}
   - component: {fileID: 23682422}
+  - component: {fileID: 23682423}
   m_Layer: 0
   m_Name: Note Container (1)
   m_TagString: noteContainer
@@ -139,7 +140,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23682417}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6a6d0007ad3a4c648db98e97f9eaaf4, type: 3}
   m_Name: 
@@ -332,6 +333,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &23682423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23682417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b7ca1d0884cf8242bf98f122d789bc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyClip: {fileID: 8300000, guid: b05b6a2c86949a6469e49548d83daaca, type: 3}
+  missClip: {fileID: 8300000, guid: e8ea43a309d0741489803224090063cf, type: 3}
+  soundSource: {fileID: 23682422}
 --- !u!1 &63665400
 GameObject:
   m_ObjectHideFlags: 0
