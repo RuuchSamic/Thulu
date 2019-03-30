@@ -19,7 +19,7 @@ public class StackGenerator : MonoBehaviour
         {
 
             GameObject go1 = Instantiate(noteObj, transform.position+ Vector3.up*(i + 2) * 2 + Vector3.left * 4, Quaternion.identity);
-            GameObject go2 = Instantiate(noteObj, transform.position + Vector3.up * i*2 + vectorShift, Quaternion.identity);
+            GameObject go2 = Instantiate(noteObj, transform.position + Vector3.up * (i + 2) * 2 + vectorShift, Quaternion.identity);
 
             HitNote note1 = go1.AddComponent<HitNote>();
             HitNote note2 = go2.AddComponent<HitNote>();
@@ -53,7 +53,6 @@ public class StackGenerator : MonoBehaviour
 
         }
 
-        player1StackList[0].active = true;
 
     }
 

@@ -6,8 +6,10 @@ public class NoteContainer : MonoBehaviour
 {
     bool isActive = false;
     KeyCode thisKey;
+    KeyCode thisKey2;
     GameObject[] collidedObj = new GameObject[1];
-    
+    GameObject[] collidedObj2 = new GameObject[1];
+
 
     void Update()
     {
@@ -21,6 +23,10 @@ public class NoteContainer : MonoBehaviour
         {
             Destroy(collidedObj[0]);
         }
+        else if (Input.GetKeyDown(thisKey2))
+        {
+            Destroy(collidedObj2[0]);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -30,21 +36,44 @@ public class NoteContainer : MonoBehaviour
 
         if (other.gameObject.tag == "NoteBlock")
         {
-            collidedObj[0] = other.gameObject;
-            thisKey = other.gameObject.GetComponent<HitNote>().key;
-            print(thisKey);
-            Debug.Log("hello");
-            isActive = true;
-            //if (Input.GetKeyDown(thisKey))
-                //{
-                ////add to user's score? or combo/streak
-                //Debug.Log("HELLO?????");
-                //Destroy(other.gameObject);
-                //}
-                ////else: penalize player for missing key
+
+            if (other.gameObject.GetComponent<HitNote>().key == KeyCode.W ||
+            other.gameObject.GetComponent<HitNote>().key == KeyCode.A ||
+                other.gameObject.GetComponent<HitNote>().key == KeyCode.S ||
+            other.gameObject.GetComponent<HitNote>().key == KeyCode.D)
+            {
+
+                collidedObj[0] = other.gameObject;
+
+                thisKey = other.gameObject.GetComponent<HitNote>().key;
+                print(thisKey);
+                Debug.Log("hello");
+                isActive = true;
 
             }
+
+            else
+            {
+                collidedObj2[0] = other.gameObject;
+                thisKey2 = other.gameObject.GetComponent<HitNote>().key;
+                print(thisKey2);
+                Debug.Log("hello");
+                isActive = true;
+            }
+
+
+            //if (Input.GetKeyDown(thisKey))
+            //{
+            ////add to user's score? or combo/streak
+            //Debug.Log("HELLO?????");
+            //Destroy(other.gameObject);
+            //}
+            ////else: penalize player for missing key
+
         }
+
+
+    }
 
 
     }
