@@ -144,6 +144,7 @@ MonoBehaviour:
   stackSize: 5
   noteObj: {fileID: 6770349052498146172, guid: 859618aa05dd842b6bd4ae97b8225510, type: 3}
   startVector: {x: 0, y: 0, z: 0}
+  vectorShift: {x: 4, y: 0, z: 0}
 --- !u!4 &494869152
 Transform:
   m_ObjectHideFlags: 0
@@ -265,8 +266,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042095530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.016, y: -1.522, z: 0.0029922798}
-  m_LocalScale: {x: 1.335, y: 0.677, z: 1}
+  m_LocalPosition: {x: 2.648, y: -1.522, z: 0.0029922798}
+  m_LocalScale: {x: 2.222775, y: 0.677, z: 1}
   m_Children: []
   m_Father: {fileID: 1050178001}
   m_RootOrder: 0
@@ -458,6 +459,7 @@ MonoBehaviour:
   stackSize: 10
   noteObj: {fileID: 6770349052498146172, guid: 859618aa05dd842b6bd4ae97b8225510, type: 3}
   startVector: {x: 0, y: 0, z: 0}
+  vectorShift: {x: 4, y: 0, z: 0}
 --- !u!4 &1952685789
 Transform:
   m_ObjectHideFlags: 0
@@ -564,5 +566,31 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.54
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5914020757329842583, guid: 60fbe9742cdad4a458fc7331743bb1f2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5914020757999914839, guid: 60fbe9742cdad4a458fc7331743bb1f2,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.021829605
+      objectReference: {fileID: 0}
+    - target: {fileID: 5914020757999914839, guid: 60fbe9742cdad4a458fc7331743bb1f2,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.874897
+      objectReference: {fileID: 0}
+    - target: {fileID: 5914020757999914839, guid: 60fbe9742cdad4a458fc7331743bb1f2,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0000026226044
+      objectReference: {fileID: 0}
+    - target: {fileID: 5914020757999914839, guid: 60fbe9742cdad4a458fc7331743bb1f2,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.974011
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5914020757329842583, guid: 60fbe9742cdad4a458fc7331743bb1f2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 60fbe9742cdad4a458fc7331743bb1f2, type: 3}
