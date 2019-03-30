@@ -11,6 +11,7 @@ public class StackGenerator : MonoBehaviour
     List<GameObject> player2StackList = new List<GameObject>();
     public GameObject noteObj;
     public Vector3 startVector = new Vector3(0, 0, 0);
+    public Vector3 vectorShift = new Vector3(4, 0, 0);
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +19,8 @@ public class StackGenerator : MonoBehaviour
         for (int i = 0; i < stackSize; i++)
         {
 
-            GameObject go1 = Instantiate(noteObj, transform.position+Vector3.up*i, Quaternion.identity);
-            GameObject go2 = Instantiate(noteObj, transform.position + Vector3.up * i +Vector3.left, Quaternion.identity);
+            GameObject go1 = Instantiate(noteObj, transform.position+Vector3.up*i*2, Quaternion.identity);
+            GameObject go2 = Instantiate(noteObj, transform.position + Vector3.up * i*2 + vectorShift, Quaternion.identity);
 
             //GameObject go1 = new GameObject();
             HitNote note1 = go1.AddComponent<HitNote>();
