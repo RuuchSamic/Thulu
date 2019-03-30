@@ -2,13 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[RequireComponent(typeof(AudioSource))]
 public class NoteContainer : MonoBehaviour
 {
+
     bool isActive = false;
     KeyCode thisKey;
     KeyCode thisKey2;
     GameObject[] collidedObj = new GameObject[1];
     GameObject[] collidedObj2 = new GameObject[1];
+    public AudioClip destroyClip;
+    public AudioClip missClip;
+    public AudioSource soundSource;
+
 
 
     void Update()
@@ -22,11 +29,20 @@ public class NoteContainer : MonoBehaviour
         if (Input.GetKeyDown(thisKey) == true)
         {
             Destroy(collidedObj[0]);
+            soundSource.clip = destroyClip;
+            soundSource.Play();
         }
         else if (Input.GetKeyDown(thisKey2))
         {
             Destroy(collidedObj2[0]);
+            soundSource.clip = destroyClip;
+            soundSource.Play();
         }
+        //else if (Input.GetKeyDown)
+        //{
+        //    soundSource.clip = missClip;
+        //    soundSource.Play();
+        //}
     }
 
     void OnTriggerEnter2D(Collider2D other)
