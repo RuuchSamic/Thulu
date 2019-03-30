@@ -7,7 +7,9 @@ public class Scorecard : MonoBehaviour
 
     public NoteContainer nC1;
     public NoteContainer2 nC2;
-    private int gameScore;
+    public GameObject Player1;
+    public GameObject Player2;
+    public int gameScore;
 
     // Start is called before the first frame update
     void Start()
@@ -20,5 +22,7 @@ public class Scorecard : MonoBehaviour
     {
         gameScore = nC2.player2Count - nC1.player1Count;
         print("Total game score: " + gameScore);
+
+        //if(gameScore)
     }
 }
